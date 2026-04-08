@@ -1,366 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Ads Roll</title>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet">
-        <!-- Fonts CSS-->
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">ADS ROLL</a>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="">
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0">ADS ROLL</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Let your ads roll!</p>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xeni CODE — software that connects</title>
+  <meta name="description" content="xeni CODE is a software studio building Android, iOS, Flutter, PHP and Python applications. Minimalist engineering. Opinionated design. Shipped work." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="icon" href="assets/logo-dark.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- =================== NAV =================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="xeni CODE — home">
+        <img src="assets/logo-dark.png" alt="" class="nav__logo" width="32" height="32" />
+        <span class="nav__wordmark">
+          <span class="nav__wordmark-a">xeni</span>
+          <span class="nav__wordmark-sep">/</span>
+          <span class="nav__wordmark-b">CODE</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services"><span class="nav__num">01</span> Services</a>
+        <a href="#work"><span class="nav__num">02</span> Work</a>
+        <a href="#about"><span class="nav__num">03</span> About</a>
+        <a href="#contact" class="nav__cta"><span class="nav__num">04</span> Contact</a>
+      </nav>
+
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="#services"><span class="nav__num">01</span> Services</a>
+      <a href="#work"><span class="nav__num">02</span> Work</a>
+      <a href="#about"><span class="nav__num">03</span> About</a>
+      <a href="#contact"><span class="nav__num">04</span> Contact</a>
+      <div class="nav__mobile-meta">
+        <span>xenicode.company@gmail.com</span>
+        <span>Cape Town / Remote</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =================== HERO =================== -->
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="mesh" aria-hidden="true"></canvas>
+
+      <div class="hero__grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__meta">
+          <span class="tag">[ studio / est. 2017 ]</span>
+          <span class="tag tag--right">S 33.9° &nbsp; E 18.4°</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">We build software</span>
+          <span class="hero__title-line">that <em>connects.</em></span>
+        </h1>
+
+        <p class="hero__sub">
+          A small, stubborn engineering studio shipping <strong>Android</strong>,
+          <strong>iOS</strong>, <strong>Flutter</strong>, <strong>PHP</strong> and
+          <strong>Python</strong> applications for teams that care how things are made.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">
+            <span>Start a project</span>
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" aria-hidden="true">
+              <path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1" stroke-linecap="square" />
+            </svg>
+          </a>
+          <a href="#work" class="btn btn--ghost">
+            <span>View work</span>
+          </a>
+        </div>
+
+        <div class="hero__stack" aria-label="Platforms">
+          <span>ANDROID</span><span>iOS</span><span>FLUTTER</span><span>PHP</span><span>PYTHON</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- =================== SERVICES =================== -->
+    <section class="section services" id="services">
+      <header class="section__head reveal">
+        <div class="section__label">
+          <span class="section__num">/01</span>
+          <span>Services</span>
+        </div>
+        <h2 class="section__title">Five platforms.<br />One engineering mindset.</h2>
+        <p class="section__intro">
+          We stay deliberately narrow. Every service below is something we've
+          shipped in production for real users — not a buzzword on a menu.
+        </p>
+      </header>
+
+      <div class="services__grid">
+
+        <!-- Android -->
+        <article class="card reveal" style="--d:0ms">
+          <div class="card__head">
+            <svg class="card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+              <path d="M14 28h36v20a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V28z" />
+              <path d="M14 28c0-10 8-18 18-18s18 8 18 18" />
+              <line x1="20" y1="6" x2="24" y2="14" />
+              <line x1="44" y1="6" x2="40" y2="14" />
+              <circle cx="24" cy="22" r="1.2" fill="currentColor" />
+              <circle cx="40" cy="22" r="1.2" fill="currentColor" />
+              <line x1="10" y1="32" x2="10" y2="44" />
+              <line x1="54" y1="32" x2="54" y2="44" />
+              <line x1="24" y1="52" x2="24" y2="60" />
+              <line x1="40" y1="52" x2="40" y2="60" />
+            </svg>
+            <span class="card__num">01</span>
+          </div>
+          <h3 class="card__title">Android</h3>
+          <p class="card__tag">Kotlin-first native apps that feel like they belong on the device.</p>
+          <ul class="card__list">
+            <li>Jetpack Compose &amp; MVI architecture</li>
+            <li>Play Store release engineering</li>
+            <li>Offline-first &amp; sync strategies</li>
+          </ul>
+        </article>
+
+        <!-- iOS -->
+        <article class="card reveal" style="--d:80ms">
+          <div class="card__head">
+            <svg class="card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+              <rect x="18" y="6" width="28" height="52" rx="4" />
+              <line x1="18" y1="14" x2="46" y2="14" />
+              <line x1="18" y1="50" x2="46" y2="50" />
+              <circle cx="32" cy="54" r="1.5" />
+              <line x1="26" y1="10" x2="38" y2="10" />
+              <path d="M24 26l8 -8 8 8v14h-16z" />
+              <line x1="24" y1="34" x2="40" y2="34" />
+            </svg>
+            <span class="card__num">02</span>
+          </div>
+          <h3 class="card__title">iOS</h3>
+          <p class="card__tag">Swift, SwiftUI and a stubborn respect for the HIG.</p>
+          <ul class="card__list">
+            <li>SwiftUI + Combine &amp; async/await</li>
+            <li>App Store submission &amp; TestFlight</li>
+            <li>WidgetKit, Live Activities, App Clips</li>
+          </ul>
+        </article>
+
+        <!-- Flutter -->
+        <article class="card reveal" style="--d:160ms">
+          <div class="card__head">
+            <svg class="card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+              <path d="M38 6L14 30l10 10L48 16z" />
+              <path d="M24 40l10 10 14 -14H34z" />
+              <path d="M34 36L48 50l-8 8 -14 -14z" />
+              <line x1="20" y1="36" x2="20" y2="46" />
+              <line x1="44" y1="22" x2="52" y2="22" />
+            </svg>
+            <span class="card__num">03</span>
+          </div>
+          <h3 class="card__title">Flutter</h3>
+          <p class="card__tag">One codebase, two stores, zero compromise on feel.</p>
+          <ul class="card__list">
+            <li>Custom rendering &amp; design systems</li>
+            <li>Platform channels when it matters</li>
+            <li>CI/CD with Codemagic &amp; Fastlane</li>
+          </ul>
+        </article>
+
+        <!-- PHP -->
+        <article class="card reveal" style="--d:240ms">
+          <div class="card__head">
+            <svg class="card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+              <ellipse cx="32" cy="32" rx="26" ry="16" />
+              <path d="M14 26l-3 12h4l1 -4h3l1 -2c0 -2 -1 -3 -3 -3h-1l1 -3z" />
+              <path d="M26 26l-3 12h4l1 -4h3l1 -2c0 -2 -1 -3 -3 -3h-1l1 -3z" />
+              <path d="M38 28h8l-1 3h-4l-1 3h4l-1 3h-8z" />
+            </svg>
+            <span class="card__num">04</span>
+          </div>
+          <h3 class="card__title">PHP</h3>
+          <p class="card__tag">Laravel &amp; Symfony platforms that don't rot at 2am.</p>
+          <ul class="card__list">
+            <li>Laravel APIs, queues &amp; Horizon</li>
+            <li>Legacy modernisation &amp; audits</li>
+            <li>Headless CMS &amp; commerce back-ends</li>
+          </ul>
+        </article>
+
+        <!-- Python -->
+        <article class="card reveal" style="--d:320ms">
+          <div class="card__head">
+            <svg class="card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+              <path d="M22 10h16a6 6 0 0 1 6 6v12H24a6 6 0 0 0 -6 6v6h-4a6 6 0 0 1 -6 -6v-12a6 6 0 0 1 6 -6h20" />
+              <path d="M42 54H26a6 6 0 0 1 -6 -6V36h20a6 6 0 0 0 6 -6v-6h4a6 6 0 0 1 6 6v12a6 6 0 0 1 -6 6h-8" />
+              <circle cx="26" cy="16" r="1.2" fill="currentColor" />
+              <circle cx="38" cy="48" r="1.2" fill="currentColor" />
+            </svg>
+            <span class="card__num">05</span>
+          </div>
+          <h3 class="card__title">Python</h3>
+          <p class="card__tag">Django, FastAPI, data pipelines &amp; quiet automations.</p>
+          <ul class="card__list">
+            <li>Django / FastAPI services</li>
+            <li>ETL, scraping &amp; data tooling</li>
+            <li>ML model integration &amp; serving</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =================== WORK / PROCESS =================== -->
+    <section class="section process" id="work">
+      <header class="section__head reveal">
+        <div class="section__label">
+          <span class="section__num">/02</span>
+          <span>Work &amp; Process</span>
+        </div>
+        <h2 class="section__title">How a project travels<br />from idea to store listing.</h2>
+        <p class="section__intro">
+          Four phases. No surprise invoices. No mystery status updates.
+          We move in the open and ship on a cadence you can plan around.
+        </p>
+      </header>
+
+      <div class="process__wrap reveal">
+        <svg class="process__diagram" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <!-- connecting mesh lines -->
+          <g stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="square">
+            <line x1="150" y1="130" x2="450" y2="130" />
+            <line x1="450" y1="130" x2="750" y2="130" />
+            <line x1="750" y1="130" x2="1050" y2="130" />
+            <!-- triangulation -->
+            <line x1="150" y1="130" x2="450" y2="60" />
+            <line x1="450" y1="130" x2="750" y2="60" />
+            <line x1="750" y1="130" x2="1050" y2="60" />
+            <line x1="150" y1="130" x2="450" y2="200" />
+            <line x1="450" y1="130" x2="750" y2="200" />
+            <line x1="750" y1="130" x2="1050" y2="200" />
+            <line x1="450" y1="60" x2="450" y2="200" opacity="0.25" />
+            <line x1="750" y1="60" x2="750" y2="200" opacity="0.25" />
+          </g>
+          <!-- nodes -->
+          <g fill="#fff" stroke="currentColor" stroke-width="1">
+            <circle cx="150" cy="130" r="10" />
+            <circle cx="450" cy="130" r="10" />
+            <circle cx="750" cy="130" r="10" />
+            <circle cx="1050" cy="130" r="10" />
+          </g>
+          <g fill="currentColor">
+            <circle cx="150" cy="130" r="3" />
+            <circle cx="450" cy="130" r="3" />
+            <circle cx="750" cy="130" r="3" />
+            <circle cx="1050" cy="130" r="3" />
+            <circle cx="450" cy="60" r="2" />
+            <circle cx="750" cy="60" r="2" />
+            <circle cx="1050" cy="60" r="2" />
+            <circle cx="450" cy="200" r="2" />
+            <circle cx="750" cy="200" r="2" />
+            <circle cx="1050" cy="200" r="2" />
+          </g>
+        </svg>
+
+        <ol class="process__steps">
+          <li class="process__step">
+            <div class="process__num">01</div>
+            <h3>Discover</h3>
+            <p>We interrogate the problem before we touch code. Users, constraints, the shape of success.</p>
+            <span class="process__meta">1–2 wks</span>
+          </li>
+          <li class="process__step">
+            <div class="process__num">02</div>
+            <h3>Design</h3>
+            <p>Wireframes, prototypes and a design system that survives contact with engineering.</p>
+            <span class="process__meta">2–4 wks</span>
+          </li>
+          <li class="process__step">
+            <div class="process__num">03</div>
+            <h3>Build</h3>
+            <p>Weekly builds, an open Slack, CI from day one. You see progress, not PowerPoints.</p>
+            <span class="process__meta">6–16 wks</span>
+          </li>
+          <li class="process__step">
+            <div class="process__num">04</div>
+            <h3>Ship</h3>
+            <p>Store submission, monitoring, analytics and a handover that doesn't leave you stranded.</p>
+            <span class="process__meta">ongoing</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section class="section about" id="about">
+      <div class="about__grid">
+        <header class="section__head reveal">
+          <div class="section__label">
+            <span class="section__num">/03</span>
+            <span>About</span>
+          </div>
+          <h2 class="section__title">A small studio.<br />A large appetite for hard problems.</h2>
         </header>
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PORTFOLIO</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="Log Cabin"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cake.png" alt="Tasty Cake"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/circus.png" alt="Circus Tent"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/game.png" alt="Controller"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/safe.png" alt="Locked Safe"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="Submarine"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Modal-->
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Log Cabin"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="about__copy reveal">
+          <p>
+            xeni CODE is a tight-knit engineering studio founded in 2017. We're the
+            people teams call when the idea is ambitious, the deadline is real, and
+            the details have to be right. No account managers, no stand-up theatre —
+            just senior engineers who ship.
+          </p>
+          <p>
+            We believe software is a craft. We write tests we'd want to read. We
+            refuse briefs we can't execute well. And we stay small on purpose, so
+            the people you meet on day one are the people still with your project
+            on launch day.
+          </p>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="Tasty Cake"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <dl class="stats reveal">
+          <div class="stat">
+            <dt>Apps shipped</dt>
+            <dd><span class="counter" data-target="58">0</span><span class="stat__plus">+</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Countries reached</dt>
+            <dd><span class="counter" data-target="12">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Years in orbit</dt>
+            <dd><span class="counter" data-target="8">0</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section class="section contact" id="contact">
+      <div class="contact__grid">
+        <header class="section__head reveal">
+          <div class="section__label">
+            <span class="section__num">/04</span>
+            <span>Contact</span>
+          </div>
+          <h2 class="section__title">Tell us about<br />the thing you want to build.</h2>
+          <p class="section__intro">
+            We reply to every real inquiry within two working days. If it's a
+            good fit, we'll set up a 45-minute call. If it isn't, we'll say so
+            and point you somewhere better.
+          </p>
+
+          <div class="contact__meta">
+            <a href="mailto:xenicode.company@gmail.com" class="contact__mail">xenicode.company@gmail.com</a>
+            <span>Cape Town &nbsp;/&nbsp; Remote worldwide</span>
+          </div>
+        </header>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label"><span class="field__num">01</span> Name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Ada Lovelace" />
+            </label>
+            <label class="field">
+              <span class="field__label"><span class="field__num">02</span> Email</span>
+              <input type="email" name="email" required autocomplete="email" placeholder="ada@analytical.co" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__label"><span class="field__num">03</span> Project type</span>
+            <div class="select">
+              <select name="type" required>
+                <option value="">— select one —</option>
+                <option>Android app</option>
+                <option>iOS app</option>
+                <option>Flutter (cross-platform)</option>
+                <option>PHP / Laravel back-end</option>
+                <option>Python / Django back-end</option>
+                <option>Something else</option>
+              </select>
+              <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" fill="none" stroke-width="1" /></svg>
             </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="Circus Tent"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="Controller"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="Locked Safe"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="Submarine"/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">ABOUT</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-                    </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTACT</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Content-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
-                            <div class="text-muted">Phone</div>
-                            <div class="lead font-weight-bold">(555) 555-5555</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:name@example.com">name@example.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">2215 John Daniel Drive
-Clark, MO 65243</p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/StartBootstrap"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/sbootstrap"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/startbootstrap"><i class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.dribble.com/startbootstrap"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">ABOUT FREELANCER</h4>
-                        <p class="pre-wrap lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container">
-                <!-- Copyright © Ads Roll 2024 -->
-                <small class="pre-wrap" id="copyright_and_year"></small>
-            </div>
-        </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+          </label>
+
+          <label class="field">
+            <span class="field__label"><span class="field__num">04</span> Tell us the story</span>
+            <textarea name="message" rows="5" required placeholder="What are you building? Who is it for? What have you tried?"></textarea>
+          </label>
+
+          <button class="btn btn--primary btn--block" type="submit">
+            <span>Send transmission</span>
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" aria-hidden="true">
+              <path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1" stroke-linecap="square" />
+            </svg>
+          </button>
+
+          <p class="form__success" id="form-success" hidden>
+            <span class="form__success-tick" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5 9-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+            </span>
+            Transmission received. We'll be in touch within two working days.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="footer__brand" aria-label="xeni CODE home">
+        <img src="assets/logo-light.png" alt="" class="footer__logo" width="32" height="32" />
+        <span class="footer__wordmark">xeni <em>/</em> CODE</span>
+      </a>
+      <nav class="footer__links" aria-label="Social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Dribbble">Dribbble</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> xeni CODE. All rights reserved.</span>
+      <span class="footer__mono">BUILT IN CAPE TOWN &nbsp;·&nbsp; SHIPPED WORLDWIDE</span>
+      <span>v1.0 — wireframe edition</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
