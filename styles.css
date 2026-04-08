@@ -109,7 +109,7 @@ dl, dd { margin: 0; }
   align-items: baseline;
 }
 .nav__wordmark-sep {
-  color: var(--muted-2);
+  color: var(--accent);
   font-weight: 300;
   transform: translateY(-1px);
 }
@@ -134,7 +134,7 @@ dl, dd { margin: 0; }
   transition: color .25s var(--ease);
 }
 .nav__num {
-  color: var(--muted-2);
+  color: var(--accent);
   margin-right: .35rem;
   font-weight: 400;
 }
@@ -414,7 +414,7 @@ dl, dd { margin: 0; }
   left: 0;
   width: 1px;
   height: 30px;
-  background: var(--ink);
+  background: var(--accent);
   animation: drip 2.4s infinite var(--ease);
 }
 @keyframes drip {
@@ -737,7 +737,7 @@ dl, dd { margin: 0; }
   display: flex;
   gap: .5rem;
 }
-.field__num { color: var(--muted-2); }
+.field__num { color: var(--accent); }
 .field input,
 .field textarea,
 .select select {
@@ -800,7 +800,8 @@ dl, dd { margin: 0; }
   width: 24px; height: 24px;
   display: grid;
   place-items: center;
-  border: var(--hairline) solid var(--ink);
+  border: var(--hairline) solid var(--accent);
+  color: var(--accent);
 }
 .form__success-tick svg { width: 14px; height: 14px; }
 @keyframes slidein {
@@ -841,7 +842,7 @@ dl, dd { margin: 0; }
   letter-spacing: .02em;
 }
 .footer__wordmark em {
-  color: var(--muted-2);
+  color: var(--accent);
   font-style: normal;
   font-weight: 300;
   padding: 0 .25rem;
