@@ -322,16 +322,8 @@ dl, dd { margin: 0; }
   font-style: italic;
   font-weight: 300;
   font-family: "Space Grotesk", serif;
-  position: relative;
   padding-right: .08em;
-}
-.hero__title em::after {
-  content: "";
-  position: absolute;
-  right: -.1em; bottom: .15em;
-  width: .12em; height: .12em;
-  background: var(--accent);
-  border-radius: 50%;
+  color: var(--accent);
 }
 
 .hero__sub {
@@ -383,7 +375,7 @@ dl, dd { margin: 0; }
   position: absolute;
   left: 0; top: 50%;
   width: 6px; height: 1px;
-  background: var(--ink);
+  background: var(--accent);
 }
 
 .hero__scroll {
@@ -444,6 +436,7 @@ dl, dd { margin: 0; }
   border: var(--hairline) solid var(--rule-strong);
 }
 .section__num { color: var(--accent); }
+.accent { color: var(--accent); }
 .section__title {
   font-family: var(--font-sans);
   font-weight: 400;
@@ -513,7 +506,7 @@ dl, dd { margin: 0; }
 .card__num {
   font-family: var(--font-mono);
   font-size: .7rem;
-  color: var(--muted-2);
+  color: var(--accent);
   letter-spacing: .1em;
 }
 .card__title {
@@ -654,6 +647,7 @@ dl, dd { margin: 0; }
   letter-spacing: -0.04em;
   display: flex;
   align-items: flex-start;
+  color: var(--accent);
 }
 .stat__plus {
   font-size: .5em;
@@ -781,6 +775,7 @@ dl, dd { margin: 0; }
   height: 8px;
   pointer-events: none;
   transform: translateY(-50%);
+  color: var(--accent);
 }
 .form__success {
   margin: 0;
