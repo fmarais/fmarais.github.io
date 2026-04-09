@@ -238,6 +238,15 @@ dl, dd { margin: 0; }
 .btn--ghost { border-color: var(--rule-strong); }
 .btn--ghost:hover { border-color: var(--ink); }
 .btn--block { width: 100%; justify-content: center; padding: 1.1rem; }
+.btn.is-loading {
+  pointer-events: none;
+  animation: btn-pulse 1.1s ease-in-out infinite;
+}
+.btn.is-loading svg { display: none; }
+@keyframes btn-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .5; }
+}
 
 /* =============== HERO =============== */
 .hero {
@@ -791,6 +800,9 @@ dl, dd { margin: 0; }
   gap: .9rem;
   animation: slidein .5s var(--ease-out);
 }
+.form__success[hidden] { display: none; }
+.form__error { border-color: var(--rule-strong); color: var(--muted); }
+.form__error-mark { border-color: var(--muted); color: var(--muted); }
 .form__success-tick {
   width: 24px; height: 24px;
   display: grid;

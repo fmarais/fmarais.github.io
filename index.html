@@ -375,7 +375,34 @@
           </div>
         </header>
 
+        <!--
+          CONTACT FORM — submission delivery
+          ----------------------------------
+          This is a static GitHub Pages site (no backend), so we relay
+          submissions through Web3Forms (https://web3forms.com).
+
+          How it works:
+            1. The submit handler in script.js POSTs the form fields as
+               JSON to https://api.web3forms.com/submit, including the
+               public access_key tied to xenicode.company@gmail.com.
+            2. Web3Forms forwards the message to that inbox. The visitor's
+               address is set as Reply-To, so hitting reply just works.
+            3. On success we reveal #form-success; on failure #form-error.
+
+          Notes:
+            - The access_key is intentionally public — it only authorises
+              delivery to the inbox it was issued for, not account access.
+            - The hidden `botcheck` checkbox below is a honeypot: real users
+              never see it, bots tick everything, and filled submissions are
+              dropped client-side before the request goes out.
+            - Free tier is 250 submissions/month. Manage the key at
+              https://web3forms.com/dashboard if it ever needs rotating.
+            - Dashboard login: sign in at https://web3forms.com/login
+              using "Continue with Google" and pick xenicode.company@gmail.com
+              (the same Google account the access key is bound to).
+        -->
         <form class="form reveal" id="contact-form" novalidate>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
           <div class="form__row">
             <label class="field">
               <span class="field__label"><span class="field__num">01</span> Name</span>
@@ -420,6 +447,13 @@
               <svg viewBox="0 0 20 20" fill="none"><path d="M3 10l5 5 9-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
             </span>
             Transmission received. We'll be in touch.
+          </p>
+
+          <p class="form__success form__error" id="form-error" hidden>
+            <span class="form__success-tick form__error-mark" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+            </span>
+            Transmission failed. Please email xenicode.company@gmail.com directly.
           </p>
         </form>
       </div>

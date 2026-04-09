@@ -78,12 +78,18 @@
   }
 
   /* ----------------------------------------------------
-     4. CONTACT FORM — fake submit with success state
+     4. CONTACT FORM — submits to Web3Forms relay
      ---------------------------------------------------- */
+  const WEB3FORMS_KEY = '56cf17d4-4f42-42b0-abd3-934ced1a38aa';
   const form = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
+  const errorEl = document.getElementById('form-error');
   if (form && success) {
-    form.addEventListener('submit', (e) => {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitLabel = submitBtn && submitBtn.querySelector('span');
+    const originalLabel = submitLabel ? submitLabel.textContent : '';
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       // Basic validation
       const name = form.name.value.trim();
@@ -94,10 +100,58 @@
         form.reportValidity();
         return;
       }
-      // Disable & show success
+      // Honeypot — silently drop bot submissions.
+      // NOTE: must check `.checked`, not `.value` — a checkbox's `.value`
+      // is always "on" regardless of state, which would drop every submission.
+      if (form.botcheck && form.botcheck.checked) return;
+
+      if (errorEl) errorEl.hidden = true;
+      success.hidden = true;
       [...form.elements].forEach(el => el.disabled = true);
-      success.hidden = false;
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (submitBtn) submitBtn.classList.add('is-loading');
+      if (submitLabel) submitLabel.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: `[xeni CODE] New ${type} inquiry from ${name}`,
+            from_name: 'xeni CODE website',
+            // Submissions are delivered to xenicode.company@gmail.com (the
+            // inbox bound to the Web3Forms access key). A Gmail forwarding
+            // rule on that account then mirrors every message to
+            // fm.marais@gmail.com, so we don't need to list it here.
+            name,
+            email,
+            type,
+            message,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok || !data.success) {
+          throw new Error(data.message || 'Submission failed');
+        }
+        // Success — clear inputs and re-enable so a follow-up message is possible
+        form.reset();
+        [...form.elements].forEach(el => el.disabled = false);
+        success.hidden = false;
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (err) {
+        // Failure — leave the user's typed values intact so they can retry
+        [...form.elements].forEach(el => el.disabled = false);
+        if (errorEl) {
+          errorEl.hidden = false;
+          errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      } finally {
+        if (submitBtn) submitBtn.classList.remove('is-loading');
+        if (submitLabel) submitLabel.textContent = originalLabel;
+      }
     });
   }
 
