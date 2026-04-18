@@ -1,0 +1,64 @@
+# xeni CODE
+
+> xeni CODE is a Cape Town software studio, founded in 2017, that builds Android, iOS, Flutter, PHP and Python applications for teams that care how things are made.
+
+xeni CODE is a small, senior engineering team. We stay deliberately narrow: every service we offer is something we ship in production. We work remotely with clients worldwide and are based in Cape Town, South Africa.
+
+## Services
+
+- **Android** — Native Kotlin apps. Jetpack Compose, MVI architecture, Play Store release engineering, offline-first sync.
+- **iOS** — Native Swift apps. SwiftUI, Combine, async/await, App Store submission, TestFlight, WidgetKit, Live Activities, App Clips.
+- **Flutter** — Cross-platform apps with a single codebase. Custom rendering, design systems, platform channels, CI/CD with Codemagic and Fastlane.
+- **PHP** — Laravel and Symfony platforms. APIs, queues, Horizon, legacy modernisation, headless CMS and commerce back-ends.
+- **Python** — Django and FastAPI services. ETL pipelines, scraping, data tooling, ML model integration and serving.
+
+## Process
+
+1. **Discover** — interrogate the problem: users, constraints, the shape of success.
+2. **Design** — wireframes, prototypes, a design system that survives engineering.
+3. **Build** — weekly builds, open Slack, CI from day one.
+4. **Ship** — store submission, monitoring, analytics, clean handover.
+
+## Facts
+
+- **Name**: xeni CODE (also written "xenicode")
+- **Founded**: 2017
+- **Location**: Cape Town, South Africa
+- **Reach**: remote worldwide
+- **Team**: small, senior engineers only — no account managers
+- **Apps shipped**: 58+
+- **Countries reached**: 12
+- **Years in orbit**: 8
+- **Typical engagement**: 6–16 weeks from kick-off to store submission
+- **Contact**: xenicode.company@gmail.com
+- **Website**: https://xenicode.app/
+
+## FAQ
+
+### What platforms does xeni CODE build for?
+Native Android (Kotlin, Jetpack Compose), native iOS (Swift, SwiftUI), cross-platform Flutter, and PHP (Laravel, Symfony) and Python (Django, FastAPI) back-end services.
+
+### Where is xeni CODE based?
+Cape Town, South Africa. Remote worldwide.
+
+### How long does a typical project take?
+Between 6 and 16 weeks from kick-off to store submission. Weekly build cadence, scoped upfront to avoid surprise invoices.
+
+### Do you work with startups or established companies?
+Both. Funded startups shipping their first product and established companies modernising legacy systems.
+
+### Can xeni CODE take over an existing codebase?
+Yes. Android, iOS, Flutter, Laravel and Django codebases. Starts with an engineering audit before a rescue plan or rewrite.
+
+### How do I start a project?
+Email xenicode.company@gmail.com or use the contact form on https://xenicode.app/. We reply to every real inquiry within two working days.
+
+## Links
+
+- Homepage: https://xenicode.app/
+- Services: https://xenicode.app/#services
+- Work & Process: https://xenicode.app/#work
+- About: https://xenicode.app/#about
+- FAQ: https://xenicode.app/#faq
+- Contact: https://xenicode.app/#contact
+- Sitemap: https://xenicode.app/sitemap.xml

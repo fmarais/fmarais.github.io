@@ -53,6 +53,8 @@
      ---------------------------------------------------- */
   const counters = document.querySelectorAll('.counter');
   if ('IntersectionObserver' in window && !prefersReducedMotion) {
+    // HTML ships with real values for crawlers; reset to 0 for smooth animation.
+    counters.forEach(c => { c.textContent = '0'; });
     const cio = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (!e.isIntersecting) return;
