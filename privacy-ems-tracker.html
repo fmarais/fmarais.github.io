@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Privacy Policy — EMS Response Tracker | xeni CODE</title>
+  <meta name="description" content="Privacy policy for the EMS Response Tracker mobile application by xeni CODE. Describes what data the app collects, how it is stored, and how it is used." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <link rel="canonical" href="https://xenicode.app/privacy-ems-tracker.html" />
+  <link rel="icon" href="assets/logo-dark.png" />
+  <link rel="apple-touch-icon" href="assets/logo-dark.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Local typographic adjustments for the privacy doc.
+       Reuses tokens from styles.css — no new colors. */
+    .doc { max-width: 900px; }
+    .doc h2 {
+      font-family: var(--font-sans);
+      font-weight: 500;
+      font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+      letter-spacing: -0.01em;
+      margin: 3rem 0 1rem;
+      padding-top: 2rem;
+      border-top: var(--hairline) solid var(--rule);
+    }
+    .doc h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+    .doc h3 {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: var(--muted);
+      margin: 2rem 0 .75rem;
+    }
+    .doc p, .doc li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--ink-2);
+    }
+    .doc p { margin: 0 0 1rem; }
+    .doc ul { list-style: none; padding: 0; margin: 0 0 1.25rem; }
+    .doc ul li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: .5rem;
+    }
+    .doc ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted-2);
+    }
+    .doc strong { color: var(--ink); font-weight: 500; }
+    .doc a {
+      color: var(--ink);
+      border-bottom: var(--hairline) solid var(--rule-strong);
+      transition: border-color .25s var(--ease);
+    }
+    .doc a:hover { border-color: var(--accent); }
+    .doc code {
+      font-family: var(--font-mono);
+      font-size: .85em;
+      padding: .1rem .35rem;
+      border: var(--hairline) solid var(--rule);
+      color: var(--ink);
+    }
+    .doc__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: var(--hairline) solid var(--rule);
+      font-family: var(--font-mono);
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+    }
+    .doc__meta span strong { color: var(--ink); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- =================== NAV =================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html#top" class="nav__brand" aria-label="xeni CODE — home">
+        <img src="assets/logo-dark.png" alt="" class="nav__logo" width="32" height="32" />
+        <span class="nav__wordmark">
+          <span class="nav__wordmark-a">xeni</span>
+          <span class="nav__wordmark-sep">/</span>
+          <span class="nav__wordmark-b">CODE</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#services"><span class="nav__num">01</span> Services</a>
+        <a href="index.html#work"><span class="nav__num">02</span> Work</a>
+        <a href="index.html#about"><span class="nav__num">03</span> About</a>
+        <a href="index.html#faq"><span class="nav__num">04</span> FAQ</a>
+        <a href="index.html#contact" class="nav__cta"><span class="nav__num">05</span> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section" id="top">
+      <header class="section__head">
+        <div class="section__label">
+          <span class="section__num">/</span>
+          <span>Legal &middot; Privacy</span>
+        </div>
+        <h1 class="section__title">Privacy Policy <br /><span class="accent">EMS Response Tracker</span></h1>
+        <p class="section__intro">
+          This document describes what information the EMS Response Tracker
+          mobile application collects, how that information is stored, and
+          how it is used. It applies to the Android and iOS versions of the
+          app published by xeni CODE under the package identifier
+          <code>com.xenicode.ems2</code>.
+        </p>
+      </header>
+
+      <div class="doc">
+
+        <div class="doc__meta">
+          <span><strong>Effective:</strong> 29 April 2026</span>
+          <span><strong>Last updated:</strong> 29 April 2026</span>
+          <span><strong>Publisher:</strong> xeni CODE</span>
+        </div>
+
+        <h2>1. Summary</h2>
+        <p>
+          EMS Response Tracker is a tool for emergency response personnel to
+          time their action items and record GPS tracks during a callout.
+          The app is designed to keep your data on your device. We do not
+          run a backend server, we do not have user accounts, and we do not
+          sell, share, or monetise your data.
+        </p>
+        <p>
+          The only data that ever leaves your device is anonymous crash
+          diagnostics (when a crash occurs) and the standard map-tile
+          requests required to display the map view. Both are described in
+          detail below.
+        </p>
+
+        <h2>2. What the app stores on your device</h2>
+        <p>
+          When you use the app, the following information is written to a
+          local SQLite database and to local preferences on your device:
+        </p>
+        <ul>
+          <li><strong>Callouts</strong> — start time, end time, and the action items you tap during the callout.</li>
+          <li><strong>Action item records</strong> — which item was active, and the start and end timestamps for each.</li>
+          <li><strong>Location points</strong> — GPS coordinates (latitude, longitude, accuracy, timestamp) sampled while a callout is active and GPS tracking is enabled.</li>
+          <li><strong>Templates</strong> — the list of action item templates you have configured.</li>
+          <li><strong>Settings</strong> — your preferences, such as the GPS ping interval and theme colour.</li>
+        </ul>
+        <p>
+          This data is stored locally and is not transmitted to xeni CODE or
+          to any third party. If you uninstall the app, this data is
+          removed from the device by the operating system.
+        </p>
+
+        <h2>3. Location data</h2>
+        <p>
+          The app requests permission to use your device's location only so
+          that it can record GPS tracks during an active callout. Location
+          collection is subject to the following rules:
+        </p>
+        <ul>
+          <li>Location is only sampled while a callout is <strong>actively running</strong>. No background tracking takes place outside an open callout.</li>
+          <li>You can disable GPS tracking entirely from the Settings tab, in which case no location data is collected at all.</li>
+          <li>You can decline the system location permission. The app will continue to function for timing action items; only the map track feature will be unavailable.</li>
+          <li>Recorded location points are stored locally in the app's database and are <strong>never uploaded</strong> to xeni CODE or any third party.</li>
+        </ul>
+
+        <h2>4. Map tiles</h2>
+        <p>
+          The Map tab displays an interactive map using tiles served by
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
+          When you view the map, your device makes standard HTTPS requests
+          to OpenStreetMap tile servers for the visible map area. These
+          requests carry the same information as any web request (your IP
+          address, user agent, and the tile coordinates being viewed) and
+          are handled under OpenStreetMap's own privacy policy.
+        </p>
+        <p>
+          xeni CODE does not operate the tile servers and does not receive
+          a copy of these requests.
+        </p>
+
+        <h2>5. Crash reporting</h2>
+        <p>
+          The app uses <strong>Firebase Crashlytics</strong> to report
+          unhandled errors and crashes. This is the only Firebase service
+          enabled. When a crash occurs, Crashlytics collects the following:
+        </p>
+        <ul>
+          <li>Stack trace and exception details.</li>
+          <li>Device model, operating system version, and app version.</li>
+          <li>An anonymous installation identifier generated by the Firebase SDK.</li>
+        </ul>
+        <p>
+          Crashlytics <strong>does not</strong> collect your name, email,
+          phone number, contacts, photos, files, callout content, action
+          item names, or location data. Crash reports are used solely to
+          diagnose and fix bugs in the app. They are processed by Google
+          on behalf of xeni CODE under
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's privacy and security terms</a>.
+        </p>
+
+        <h2>6. Permissions requested</h2>
+        <ul>
+          <li><strong>Location (foreground)</strong> — required to record GPS tracks during an active callout. Optional; can be declined.</li>
+        </ul>
+        <p>
+          The app does not request access to your contacts, camera,
+          microphone, photos, calendar, or any other sensitive system
+          resource.
+        </p>
+
+        <h2>7. Sharing and disclosure</h2>
+        <p>
+          xeni CODE does not sell, rent, or trade any data. The only
+          third-party services involved in operating the app are:
+        </p>
+        <ul>
+          <li><strong>Google Firebase Crashlytics</strong> — anonymous crash reports, as described in Section 5.</li>
+          <li><strong>OpenStreetMap</strong> — map tile delivery, as described in Section 4.</li>
+        </ul>
+        <p>
+          We may disclose information only if required by law, valid legal
+          process, or to protect the rights, property, or safety of users
+          or the public.
+        </p>
+
+        <h2>8. Your choices and controls</h2>
+        <ul>
+          <li><strong>Disable GPS tracking</strong> — toggle GPS off in the Settings tab to stop all location recording.</li>
+          <li><strong>Delete a callout</strong> — open the History tab and delete any individual callout. Deleting a callout removes its action item records and all associated location points.</li>
+          <li><strong>Remove all data</strong> — uninstall the app from your device. The local database and preferences are removed by the operating system.</li>
+          <li><strong>Crash reporting</strong> — to stop sending future crash reports, uninstall the app.</li>
+        </ul>
+
+        <h2>9. Data retention</h2>
+        <p>
+          Data stored on your device is retained until you delete it or
+          uninstall the app. Crash reports collected through Crashlytics
+          are retained according to Firebase's standard retention policy
+          (typically 90 days for individual crash events).
+        </p>
+
+        <h2>10. Children's privacy</h2>
+        <p>
+          The app is intended for use by adult emergency response
+          personnel. It is not directed at children under 13, and we do
+          not knowingly collect any information from children.
+        </p>
+
+        <h2>11. Security</h2>
+        <p>
+          On-device data is protected by the operating system's standard
+          application sandbox. Crash reports are transmitted to Firebase
+          over HTTPS. No system can be guaranteed perfectly secure;
+          however, because the app does not transmit your callout content
+          or location data off the device, the surface area for compromise
+          is intentionally small.
+        </p>
+
+        <h2>12. International users</h2>
+        <p>
+          xeni CODE is based in Cape Town, South Africa. Crash reports
+          processed through Firebase Crashlytics may be processed on
+          servers operated by Google in the United States or other
+          countries.
+        </p>
+
+        <h2>13. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time. The "Last updated"
+          date at the top of this page reflects the most recent change.
+          Material changes will be highlighted in the app or in the
+          relevant app store listing.
+        </p>
+
+        <h2>14. Contact</h2>
+        <p>
+          Questions, concerns, or requests about this policy can be sent
+          to <a href="mailto:xenicode.company@gmail.com">xenicode.company@gmail.com</a>.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="index.html#top" class="footer__brand" aria-label="xeni CODE home">
+        <img src="assets/logo-light.png" alt="" class="footer__logo" width="32" height="32" />
+        <span class="footer__wordmark">xeni <em>/</em> CODE</span>
+      </a>
+      <nav class="footer__links" aria-label="Site">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> XENICODE. All rights reserved.</span>
+      <span class="footer__mono">BUILT IN CAPE TOWN &nbsp;&middot;&nbsp; SHIPPED WORLDWIDE</span>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year — kept inline so this page does not depend on script.js.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
