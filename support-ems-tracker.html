@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Support — EMS Response Tracker | xeni CODE</title>
+  <meta name="description" content="Support page for the EMS Response Tracker mobile application by xeni CODE. How to get help, report bugs, and request features." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <link rel="canonical" href="https://xenicode.app/support-ems-tracker.html" />
+  <link rel="icon" href="assets/logo-dark.png" />
+  <link rel="apple-touch-icon" href="assets/logo-dark.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Local typographic adjustments for the support doc.
+       Reuses tokens from styles.css — no new colors. */
+    .doc { max-width: 900px; }
+    .doc h2 {
+      font-family: var(--font-sans);
+      font-weight: 500;
+      font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+      letter-spacing: -0.01em;
+      margin: 3rem 0 1rem;
+      padding-top: 2rem;
+      border-top: var(--hairline) solid var(--rule);
+    }
+    .doc h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+    .doc h3 {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: var(--muted);
+      margin: 2rem 0 .75rem;
+    }
+    .doc p, .doc li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--ink-2);
+    }
+    .doc p { margin: 0 0 1rem; }
+    .doc ul { list-style: none; padding: 0; margin: 0 0 1.25rem; }
+    .doc ul li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: .5rem;
+    }
+    .doc ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted-2);
+    }
+    .doc strong { color: var(--ink); font-weight: 500; }
+    .doc a {
+      color: var(--ink);
+      border-bottom: var(--hairline) solid var(--rule-strong);
+      transition: border-color .25s var(--ease);
+    }
+    .doc a:hover { border-color: var(--accent); }
+    .doc code {
+      font-family: var(--font-mono);
+      font-size: .85em;
+      padding: .1rem .35rem;
+      border: var(--hairline) solid var(--rule);
+      color: var(--ink);
+    }
+    .doc__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: var(--hairline) solid var(--rule);
+      font-family: var(--font-mono);
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+    }
+    .doc__meta span strong { color: var(--ink); font-weight: 500; }
+    .contact-card {
+      margin: 1.5rem 0 2rem;
+      padding: 1.5rem;
+      border: var(--hairline) solid var(--rule);
+      display: grid;
+      gap: .75rem;
+    }
+    .contact-card__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      align-items: baseline;
+    }
+    .contact-card__label {
+      font-family: var(--font-mono);
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: var(--muted);
+      min-width: 110px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- =================== NAV =================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html#top" class="nav__brand" aria-label="xeni CODE — home">
+        <img src="assets/logo-dark.png" alt="" class="nav__logo" width="32" height="32" />
+        <span class="nav__wordmark">
+          <span class="nav__wordmark-a">xeni</span>
+          <span class="nav__wordmark-sep">/</span>
+          <span class="nav__wordmark-b">CODE</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#services"><span class="nav__num">01</span> Services</a>
+        <a href="index.html#work"><span class="nav__num">02</span> Work</a>
+        <a href="index.html#about"><span class="nav__num">03</span> About</a>
+        <a href="index.html#faq"><span class="nav__num">04</span> FAQ</a>
+        <a href="index.html#contact" class="nav__cta"><span class="nav__num">05</span> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section" id="top">
+      <header class="section__head">
+        <div class="section__label">
+          <span class="section__num">/</span>
+          <span>Support</span>
+        </div>
+        <h1 class="section__title">Support <br /><span class="accent">EMS Response Tracker</span></h1>
+        <p class="section__intro">
+          Help, troubleshooting, and contact information for the EMS
+          Response Tracker mobile application by xeni CODE
+          (<code>com.xenicode.ems2</code>) on Android and iOS.
+        </p>
+      </header>
+
+      <div class="doc">
+
+        <div class="doc__meta">
+          <span><strong>Last updated:</strong> 29 April 2026</span>
+          <span><strong>Publisher:</strong> xeni CODE</span>
+          <span><strong>Response time:</strong> within 2 business days</span>
+        </div>
+
+        <h2>1. Contact</h2>
+        <p>
+          The fastest way to reach us is by email. Please include your
+          device model, operating system version, and app version (visible
+          on the Settings tab) so we can reproduce the issue.
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-card__row">
+            <span class="contact-card__label">Email</span>
+            <a href="mailto:xenicode.company@gmail.com">xenicode.company@gmail.com</a>
+          </div>
+          <div class="contact-card__row">
+            <span class="contact-card__label">Privacy policy</span>
+            <a href="privacy-ems-tracker.html">privacy-ems-tracker.html</a>
+          </div>
+          <div class="contact-card__row">
+            <span class="contact-card__label">Publisher</span>
+            <span>xeni CODE &middot; Cape Town, South Africa</span>
+          </div>
+        </div>
+
+        <h2>2. About the app</h2>
+        <p>
+          EMS Response Tracker is a tool for emergency response personnel
+          to time their action items and record GPS tracks during a
+          callout. The app stores your data locally on your device. It has
+          no user accounts, no backend server, and no subscription.
+        </p>
+        <ul>
+          <li><strong>Home</strong> — start a callout, switch between action items, end a callout.</li>
+          <li><strong>Map</strong> — view the live or historical GPS track for a callout.</li>
+          <li><strong>History</strong> — review, share, or delete past callouts.</li>
+          <li><strong>Settings</strong> — configure GPS, action item templates, and theme colour.</li>
+        </ul>
+
+        <h2>3. Frequently asked questions</h2>
+
+        <h3>The map is blank or stuck loading</h3>
+        <p>
+          The map uses tiles served by OpenStreetMap and requires an
+          internet connection the first time you view a region. Check that
+          your device has connectivity, then re-open the Map tab.
+        </p>
+
+        <h3>GPS track is empty after a callout</h3>
+        <p>
+          GPS recording requires three things: <strong>GPS enabled in
+          Settings</strong>, the system <strong>Location permission
+          granted</strong>, and <strong>Location Services turned on</strong>
+          at the OS level. If any of these are missing, the app will still
+          time your action items, but no GPS points will be recorded.
+        </p>
+        <ul>
+          <li>iOS: Settings &rarr; Privacy &amp; Security &rarr; Location Services &rarr; EMS Response Tracker.</li>
+          <li>Android: Settings &rarr; Apps &rarr; EMS Response Tracker &rarr; Permissions &rarr; Location.</li>
+        </ul>
+
+        <h3>The app drained more battery than expected</h3>
+        <p>
+          GPS recording is the most power-intensive feature. You can
+          increase the ping interval in the Settings tab, or disable GPS
+          entirely if you only need action item timing.
+        </p>
+
+        <h3>How do I delete my data?</h3>
+        <p>
+          Delete individual callouts from the History tab — this removes
+          the callout, its action item records, and its location points.
+          To remove everything, uninstall the app; the operating system
+          deletes the local database with it.
+        </p>
+
+        <h3>Can I export a callout?</h3>
+        <p>
+          Yes. From the History tab, open a callout and use the share /
+          export action.
+        </p>
+
+        <h3>Will my data sync across devices?</h3>
+        <p>
+          No. The app intentionally keeps all data on the device it was
+          recorded on. There is no cloud sync.
+        </p>
+
+        <h2>4. Reporting a bug</h2>
+        <p>
+          Please email <a href="mailto:xenicode.company@gmail.com">xenicode.company@gmail.com</a>
+          with the following:
+        </p>
+        <ul>
+          <li>Device model (e.g. iPhone 14 Pro, Samsung Galaxy S23).</li>
+          <li>Operating system version (e.g. iOS 17.4, Android 14).</li>
+          <li>App version, shown on the Settings tab.</li>
+          <li>What you were doing when the issue happened, and what you expected to happen instead.</li>
+          <li>Screenshots or a screen recording, if possible.</li>
+        </ul>
+
+        <h2>5. Feature requests</h2>
+        <p>
+          We welcome feedback. Send feature ideas to
+          <a href="mailto:xenicode.company@gmail.com">xenicode.company@gmail.com</a>
+          with a short description of the problem you are trying to solve
+          — concrete use cases help us prioritise.
+        </p>
+
+        <h2>6. Privacy</h2>
+        <p>
+          For details on what the app stores, what it transmits, and how
+          crash reports are handled, see the
+          <a href="privacy-ems-tracker.html">EMS Response Tracker privacy policy</a>.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="index.html#top" class="footer__brand" aria-label="xeni CODE home">
+        <img src="assets/logo-light.png" alt="" class="footer__logo" width="32" height="32" />
+        <span class="footer__wordmark">xeni <em>/</em> CODE</span>
+      </a>
+      <nav class="footer__links" aria-label="Site">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> XENICODE. All rights reserved.</span>
+      <span class="footer__mono">BUILT IN CAPE TOWN &nbsp;&middot;&nbsp; SHIPPED WORLDWIDE</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
